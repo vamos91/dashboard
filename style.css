@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body{
+  background-color: #F5F6F9;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.title{
+  position: absolute;
+  right: 0px;
+}
+
+.navVertical{
+  height: 100vh;
+  background-color: #343A40;
+  text-align: left;
+  padding: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22)!important
+}
+
+.navHorizontal{
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 15px;
+}
+
+.col-md-2, .col-md-10{
+  padding-right: 0;
+  padding-left: 0;
+  transition: .4s ease;
+}
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card-chart{
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+  margin-bottom: 15px;
+}
+
+.navHorizontal .nav-link{
+  color: gray;
+}
+
+.navHorizontal .nav-link:hover{
+  color: black;
+}
+
+.navVertical .nav-link{
+  color: white;
+}
+
+.navVertical .nav-link:hover{
+  background-color: #494E53;
+  border-radius: 5px;
+}
+
+.sidebar-small{
+  max-width: 5.666667%;
+  transition: .4s ease;
+}
+
+.stat-card{
+  position: relative;
+  color: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+  margin-bottom: 15px;
+}
+
+.stat-card h2{
+  font-weight: bold;
+}
+
+.stat-card .fa-car{
+  position: absolute;
+  right: 20px;
+  font-size: 40px;
+  top: 50px;
+}
+
+.blue{
+  background-color: #18A2B8;
+}
+
+.green{
+  background-color: #27A744;
+}
+
+.yellow{
+  background-color: #FFC106;
+}
+
+@media (min-width: 768px) {
+  .col-md-10 {
+    -ms-flex: 1 0 83.333333%;
+    flex: 1 0 83.333333%;
+    max-width: 100%;
+}
+}

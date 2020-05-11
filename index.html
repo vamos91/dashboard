@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test chart.js</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/d4359d411c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="navVertical">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" id="logo">ARCURE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link blaxtair-data" href="#"><i class="fas fa-angle-double-right"></i> <span>Global blaxtair data</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-angle-double-right"></i> <span>Global detection data</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-angle-double-right"></i> <span>Global detection chart</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#"><i class="fas fa-angle-double-right"></i> <span>Blaxtair's alarms</span></a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div class="col-md-10">
+      <div class="navHorizontal">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><i class="fas fa-arrow-alt-circle-left"></i></a></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Username</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Admin contact</a>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link title">Management interface</p>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="stat-card blue">
+            <h2>3</h2>
+            <p>Vehicule</p>
+            <i class="fas fa-car"></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="stat-card green">
+            <h2>129</h2>
+            <p>Pedestrian detections</p>
+            <i class="fas fa-car"></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="stat-card yellow">
+            <h2>151</h2>
+            <p>Obstacle detections</p>
+            <i class="fas fa-car"></i>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-md-6">
+             <canvas class="card-chart" id="myChart"></canvas>
+          </div>
+          <div class="col-md-6">
+             <canvas class="card-chart" id="chLine"></canvas>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table-striped card-chart">
+            <thead>
+              <tr>
+                <th scope="col">Vehicule ID</th>
+                <th scope="col">Site ID</th>
+                <th scope="col">Processing unit</th>
+                <th scope="col">Sensor head</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Nominal</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Nominal</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>Nominal</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+  <script src="main.js"></script>
+  <script src="vertical-collapse.js"></script>
+</body>
+</html>
